@@ -16,7 +16,7 @@ class AppSecurityConfig {
 
         http
             .authorizeHttpRequests { it
-                .requestMatchers("/", "/login", "/logout", "/user").permitAll()
+                .requestMatchers("/", "/login", "/logout", "/user", "/user/password").permitAll()
                 .requestMatchers("/user/authenticated/admin").hasRole("ADMIN")
                 .requestMatchers("/user/authenticated/manager").hasRole("MANAGER")
                 .anyRequest().authenticated() // Must Log In
