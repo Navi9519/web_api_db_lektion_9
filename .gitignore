@@ -39,5 +39,6 @@ out/
 ### Kotlin ###
 .kotlin
 
-### Sensitive credentials 
+### Sensitive credentials
 src/main/resources/application.properties
+
